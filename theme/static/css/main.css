@@ -1,0 +1,171 @@
+/* Custom Color Palette */
+:root {
+    --primary: #03a9f4;
+    --on-primary: #ffffff;
+    --primary-container: #b3e5fc;
+    --on-primary-container: #002e4d;
+
+    --secondary: #ffc107;
+    --on-secondary: #ffffff;
+    --secondary-container: #fff8d4;
+    --on-secondary-container: #3a2f00;
+
+    --background: #f9f9f9;
+    --on-background: #1b1b1d;
+
+    --surface: #f9f9f9;
+    --on-surface: #1b1b1d;
+    --outline: #9ea7ad;
+
+    --shadow: rgba(0, 0, 0, 0.15);
+
+    --width: 60%;
+}
+
+/* Font Sizes */
+:root {
+    --font-size-tiny: 0.75rem;
+    --font-size-small: 0.875rem;
+    --font-size-normal: 1rem;
+    --font-size-big: 1.75rem;
+    --font-size-large: 2.5rem;
+    --font-size-huge: 3rem;
+}
+
+/* General Styles */
+html, body {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size:20px;
+    color: var(--on-background);
+    background-color: var(--background);
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#wrapper {
+    flex: 1;
+}
+
+/* Section Styles */
+section {
+    padding: 60px 20px;
+}
+
+h1 {
+    font-size: var(--font-size-huge);
+    margin-bottom: 10px;
+    color: var(--primary);
+}
+
+h2, .section-title {
+    font-size: var(--font-size-large);
+    margin-bottom: 20px;
+    color: var(--primary);
+}
+
+h3{
+    font-size: var(--font-size-big);
+    margin-bottom: 15px;
+    color: var(--primary);
+}
+
+h4{
+    font-size: var(--font-size-big);
+    margin-bottom: 15px;
+    color: var(--primary);
+}
+
+ul li::marker{
+    color: var(--primary); /* Resets the button text color to its default */
+}
+
+strong{
+    color: var(--primary);
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: var(--secondary);
+    color: var(--on-secondary);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-container);
+    color: var(--on-secondary-container);
+}
+
+/* General Container Styling */
+.container {
+    max-width: var(--width);
+    margin: 0 auto;
+}
+
+/* Page Content */
+.page-content {
+    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary);
+    color: var(--on-primary);
+    padding: 40px 20px;
+}
+
+footer h5 {
+    margin-bottom: 15px;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+footer .btn {
+    margin-top: 10px;
+}
+
+/* Scroll to Top Button Styles */
+#scrollToTop {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    display: none;
+}
+
+#scrollToTop .bi-arrow-up {
+    font-size: 24px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .header-box {
+        width: 90%;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+}
+
+.left-img{
+    width: 100%; 
+    max-width: 500px;
+}
+
+.right-img{
+    width: 100%; 
+    max-width: 500px;
+    object-fit: cover;
+    object-position: top;
+}

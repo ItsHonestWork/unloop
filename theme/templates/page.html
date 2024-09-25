@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<article>
+    <section id="{{ page.slug }}" class="py-5">
+        <div class="container">
+            <div class="page-content">
+                {{ page.content }}
+            </div>
+            <!-- Home Button -->
+            <div class="mt-4">
+                <a href="{{ SITEURL }}/" class="btn btn-primary">Home</a>
+            </div>
+        </div>
+    </section>
+</article>
+{% endblock %}

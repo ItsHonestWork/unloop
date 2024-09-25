@@ -1,0 +1,60 @@
+<!-- Header Section -->
+<header id="header" class="d-flex align-items-center justify-content-center text-white">
+    <div class="header-box text-center d-flex flex-column justify-content-end">
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center" href="{{ SITEURL }}/">
+                    {% if PAGE_TITLE %}
+                    <span class="ms-2">{{ PAGE_TITLE }}</span>
+                    {% endif %}
+                    <img src="{{ SITEURL }}/static/assets/img/logo.png" alt="{{ SITENAME }}" width="30" height="30">
+                </a>
+                <!-- Toggle button for mobile view -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavHeader" aria-controls="navbarNavHeader" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Navigation Links -->
+                <div class="collapse navbar-collapse" id="navbarNavHeader">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        {% for page in pages|sort(attribute='order') %}
+                        {% if page.nav_position == 'top' %}
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% if page.inline == 'true' %}{{ SITEURL }}/#{{ page.slug }}{% else %}{{ SITEURL }}/{{ page.url }}{% endif %}">{{ page.title }}</a>
+                        </li>
+                        {% endif %}
+                        {% endfor %}
+                        <!-- External Links -->
+                        {% for link in HEADER_EXTERNAL_LINKS %}
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ link.url }}">
+                                {% if link.icon %}
+                                <i class="bi {{ link.icon }}"></i>
+                                {% else %}
+                                {{ link.name }}
+                                {% endif %}
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Header Content -->
+        <h1 class="header-title">{{ SITENAME }}</h1>
+        <h3 class="header-subtitle">{{ SITE_SUBTITLE }}</h3>
+        {% if SITE_DESCRIPTION %}
+        <p>{{ SITE_DESCRIPTION }}</p>
+        {% endif %}
+        <!-- Buttons inside header-box -->
+        <div class="buttons mt-4">
+            {% for page in pages|sort(attribute='order') %}
+            {% if page.nav_position == 'centered' %}
+            <a href="{% if page.inline == 'true' %}{{ SITEURL }}/#{{ page.slug }}{% else %}{{ SITEURL }}/{{ page.url }}{% endif %}" class="btn btn-primary me-2">{{ page.title }}</a>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</header>

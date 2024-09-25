@@ -1,0 +1,40 @@
+#header {
+    background-color: var(--primary);
+    color: var(--on-primary);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh; /* Increase header height to 80% of viewport */
+}
+
+.header-box {
+    width: var(--width);
+    background-color: transparent;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Align content to the bottom */
+}
+
+.header-content {
+    margin-top: auto;
+}
+
+/* Headings Styles */
+.header-title {
+    font-size: var(--font-size-huge);
+    margin-bottom: 10px;
+    color: var(--on-primary);
+}
+
+.header-subtitle {
+    font-size: var(--font-size-big);
+    margin-bottom: 15px;
+    color: var(--on-primary);
+    font-style: italic;
+}
+
+.header-box p{
+    font-size: 1.25rem;
+}

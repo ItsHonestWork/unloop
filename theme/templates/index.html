@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Inline Pages Section -->
+{% for page in pages|sort(attribute='order') %}
+    {% if page.inline == 'true' %}
+    <section id="{{ page.slug }}" class="py-5">
+        <div class="container">
+            <div class="page-content">
+                {{ page.content }}
+            </div>
+        </div>
+    </section>
+    {% endif %}
+{% endfor %}
+{% endblock %}
