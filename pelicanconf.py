@@ -3,7 +3,7 @@ AUTHOR = 'ItsHonestWork'
 SITENAME = 'Unloop'
 SITE_SUBTITLE = 'Dare to Break the Cycle'
 SITE_DESCRIPTION = 'Unloop empowers you to track and understand your OCD patterns with ease. Log and analyze your triggers, obsessions, and rituals privately — and take the first step toward freedom.'
-SITEURL = ""
+SITEURL = "https://itshonestwork.github.io/unloop/"
 
 OUTPUT_PATH = "public"
 PATH = "content"
