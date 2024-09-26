@@ -14,7 +14,7 @@ Nav_Position: centered
 That said, I recommend always using pseudonyms or phrases that only have meaning to you, so you can protect your privacy under any circumstances.
   </div>
   <div style="flex: 1;">
-    <img src="\static\assets\img\front.png" alt="example" class="left-img">
+    <img src="{{ SITEURL }}\static\assets\img\front.png" alt="example" class="left-img">
   </div>
 </div>
 

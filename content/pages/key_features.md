@@ -20,7 +20,7 @@ Nav_Position: centered
 
 <div style="display: flex; align-items: center; justify-content: space-between;">
   <div style="flex: 1"> <!-- Set a fixed height for the container -->
-    <img src="\static\assets\img\dashboard.png" alt="example" class="right-img">
+    <img src="{{ SITEURL }}\static\assets\img\dashboard.png" alt="example" class="right-img">
   </div>
   <div style="flex: 2; padding-left: 20px;">
     <h3>Personalized Insights</h3>
@@ -34,7 +34,7 @@ Nav_Position: centered
     For your own peace of mind or to share with healthcare providers, easily export your data in CSV format. You remain in complete control of your information.
   </div>
   <div style="flex: 1;">
-    <img src="\static\assets\img\logentries.png" alt="example" class="left-img">
+    <img src="{{ SITEURL }}\static\assets\img\logentries.png" alt="example" class="left-img">
   </div>
 </div>
 
