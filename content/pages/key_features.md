@@ -14,7 +14,7 @@ Nav_Position: centered
     Log your triggers, obsessions, and rituals quickly, minimizing disruption to your daily life. Your entries are saved securely and sorted dynamically to streamline future logging.
   </div>
   <div style="flex: 1;">
-    <img src="\static\assets\img\trigger.png" alt="example" class="left-img">
+    <img src="{{ SITEURL }}\static\assets\img\trigger.png" alt="example" class="left-img">
   </div>
 </div>
 

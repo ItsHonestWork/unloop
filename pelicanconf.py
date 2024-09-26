@@ -36,3 +36,5 @@ FOOTER_CONTENT = {
 
 # New variable for the page title at the logo place
 PAGE_TITLE = ''
+PLUGINS = ['jinja2content']
+JINJA_GLOBALS = {'SITEURL': SITEURL}
