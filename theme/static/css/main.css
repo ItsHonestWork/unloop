@@ -1,23 +1,23 @@
-/* Custom Color Palette */
 :root {
-    --primary: #03a9f4;
-    --on-primary: #ffffff;
-    --primary-container: #b3e5fc;
-    --on-primary-container: #002e4d;
+    --primary: #5ccfe6; /* Azul suave y relajante */
+    --on-primary: #ffffff; /* Blanco para elementos sobre el color primario */
+    --primary-container: #d0f3fa; /* Tono más claro del azul primario */
+    --on-primary-container: #00343c; /* Azul oscuro para el texto en el contenedor primario */
 
-    --secondary: #ffc107;
-    --on-secondary: #ffffff;
-    --secondary-container: #fff8d4;
-    --on-secondary-container: #3a2f00;
+    --secondary: #e6b800; /* Amarillo más oscuro, aún cálido pero menos vibrante */
+    --on-secondary: #2f2f2f; /* Un gris oscuro para texto o iconos sobre el color secundario */
+    --secondary-container: #fbeab5; /* Tono claro del amarillo secundario */
+    --on-secondary-container: #4a3b00; /* Marrón oscuro para el texto en el contenedor secundario */
 
-    --background: #f9f9f9;
-    --on-background: #1b1b1d;
+    --background: #f1f7f9; /* Fondo claro con un toque azulado */
+    --on-background: #1f2d30; /* Gris oscuro para el texto sobre el fondo */
 
-    --surface: #f9f9f9;
-    --on-surface: #1b1b1d;
-    --outline: #9ea7ad;
+    --surface: #ffffff; /* Superficies como tarjetas o menús */
+    --on-surface: #2f3e42; /* Gris oscuro para los textos sobre la superficie */
+    
+    --outline: #b0c5c9; /* Un gris claro para bordes y líneas divisorias */
 
-    --shadow: rgba(0, 0, 0, 0.15);
+    --shadow: rgba(0, 0, 0, 0.1); /* Sombra ligera para mantener la suavidad */
 
     /* Default width for large screens */
     --width: 60%;
